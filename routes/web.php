@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/contato/{id?}', ['uses' => 'ControllerContato@Index']);
+Route::post('/contato', ['uses' => 'ControllerContato@Create']);
+Route::put('/contato', ['uses' => 'ControllerContato@Alter']);
+
+// Route::get('/', ['uses'=> 'ControllerPages@index']);
