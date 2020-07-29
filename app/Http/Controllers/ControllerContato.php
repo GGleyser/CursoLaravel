@@ -8,12 +8,16 @@ class ControllerContato extends Controller
 {
     public function Index()
     {
-        return view('contato');
+        $data = [
+            (object) ['gabriel', 'dany', 'paty', 'robs'],
+            (object) ['gabriel', 'dany', 'paty', 'robs'],
+        ];
+        return view('contato', ['data' => $data]);
     }
     public function Create(Request $data)
     {
-        dd($data->all());
-        // return view('contato');
+        // dd($data->all());
+        return view('contato', compact('data'));
     }
     public function Alter()
     {
