@@ -8,11 +8,9 @@ class ControllerContato extends Controller
 {
     public function Index()
     {
-        $data = [
-            (object) ['gabriel', 'dany', 'paty', 'robs'],
-            (object) ['gabriel', 'dany', 'paty', 'robs'],
-        ];
-        return view('contato', ['data' => $data]);
+        $data = new \App\ModelContato();
+      
+        return view('contato', ['data' => $data->Lista()]);
     }
     public function Create(Request $data)
     {

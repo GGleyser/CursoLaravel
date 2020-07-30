@@ -1,5 +1,11 @@
+@extends('layout.main')
 
-@foreach($data as $dados)
-    <h1>{{ $dados->first() }}</h1>
-    <h1>{{ dd($dados) }}</h1>
-@endforeach
+@section('title', 'Contato')
+
+@section('main_content')
+    <h1>contato</h1>
+
+    {{$data->nome}}
+   
+
+@endsection
