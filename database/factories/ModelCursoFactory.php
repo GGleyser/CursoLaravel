@@ -10,5 +10,7 @@ $factory->define(ModelCurso::class, function (Faker $faker) {
         'titulo' => $faker->title,
         'descricao' => $faker->paragraph,
         'valor' => 100.00,
+        'imagem' => '',
+        'publicado' => 'sim',
     ];
 });

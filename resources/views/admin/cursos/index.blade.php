@@ -2,7 +2,7 @@
 
 @section('title', 'Cursos')
 @section('main_content')
-<div>
+<div class="container">
     <h1 class="center">admin cursos</h1>
 
     <div class="row">
@@ -25,7 +25,7 @@
                     <td>{{$d->titulo}}</td>
                     <td>{{$d->descricao}}</td>
                     <td>
-                        <img src="{{ asset($d->img) }}" height="100" width="100" alt="">
+                        <img src={{ asset($d->imagem) }} height="100" width="100" alt="">
                     </td>
                     <td>{{$d->publicado}}</td>
 

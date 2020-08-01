@@ -1,12 +1,14 @@
 <nav>
-    <div class="nav-wrapper purple darken-4">
-        <a href="/" class="brand-logo">brand</a>
-        <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="/">home</a></li>
-            <li><a href={{ route('admin.cursos') }}>Meus cursos</a></li>
-            <li><a href="/login">login</a></li>
-        </ul>
+    <div class="nav-wrapper light-blue darken-1">
+        <div class="container">
+            <a href="/" class="brand-logo">brand</a>
+            <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">home</a></li>
+                <li><a href={{ route('admin.cursos') }}>Meus cursos</a></li>
+                <li><a href="/login">login</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
